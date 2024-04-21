@@ -10,7 +10,7 @@ export function WaiyakiHero() {
     <AuroraBackground>
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 50 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
@@ -18,11 +18,11 @@ export function WaiyakiHero() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        <motion.div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+        <motion.div className="text-3xl md:text4xl font-bold dark:text-white text-center">
           Nice meeting You! 👍
         </motion.div>
         <div className="text-2xl md:text-3xl font-bold dark:text-white text-center max-w-[80vw]">
-          I&apos;m WaiyakiDev, a Frontend Developer with a passion for learing
+          I&apos;m WaiyakiDev, a Frontend Developer with passion for learning
           about React and it ecosystems.
         </div>
 
