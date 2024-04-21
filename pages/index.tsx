@@ -107,7 +107,6 @@ export default function Home() {
       <main className="">
         {" "}
         <WaiyakiHero />
-        <h2 className="h-[30rem]">PROJECTS</h2>
       </main>
     </>
   );
