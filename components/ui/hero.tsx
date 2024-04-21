@@ -37,7 +37,7 @@ export function WaiyakiHero() {
             </button> */}
           </div>
 
-          <section className="flex flex-col justify-center items-center gap-4 max-w-[70vw]">
+          <section className="flex flex-col justify-center items-center gap-4 max-w-[80vw]">
             <h2 className="text-3xl md:text-5xl font-bold w-fit pb-1 border-b border-[#000C24]">
               PROJECTS
             </h2>
