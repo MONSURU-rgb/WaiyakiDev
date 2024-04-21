@@ -35,8 +35,19 @@ export function WaiyakiHero() {
             </button>
           </div>
 
-          <section>
-            <h2 className="text-3xl md:text-5xl font-bold">PROJECTS</h2>
+          <section className="flex flex-col gap-3 justify-center items-center">
+            <h2 className="text-3xl md:text-5xl font-bold w-fit pb-1 border-b border-black">
+              PROJECTS
+            </h2>
+            <p>
+              You shouldn&apos;t waste any time here! Here are some projects for
+              your review. These projects encompass many areas of software
+              development such as <span>internships</span>,{" "}
+              <span>Open-Source</span>, <span>Hackathon</span>, and{" "}
+              <span>Case Studies</span>.
+            </p>
+
+            <article></article>
           </section>
         </section>
       </motion.div>
