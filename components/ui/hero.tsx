@@ -19,10 +19,11 @@ export function WaiyakiHero() {
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
         <motion.div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-          Nice meeting You!
+          Nice meeting You! 👍
         </motion.div>
-        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-          I&apos;m WaiyakiDev
+        <div className="text-2xl md:text-3xl font-bold dark:text-white text-center max-w-[80vw]">
+          I&apos;m WaiyakiDev, a Frontend Developer with a passion for learing
+          about React and it ecosystems.
         </div>
 
         <figure className="!relative h-[18rem] aspect-square">

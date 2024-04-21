@@ -36,7 +36,7 @@ export default function Home() {
           }}
           className="px-[clamp(2rem,5vw,6.9rem)] grid gap-3"
         >
-          <h1 className="text-white font-bold text-3xl pt-[18vh] md:text-4xl lg:text-5xl">
+          <h1 className="text-white font-bold text-3xl pt-[18vh] md:text-5xl">
             WaiyakiDev
           </h1>
           <h3 className="text-white md:text-2xl text-xl">
@@ -60,15 +60,6 @@ export default function Home() {
         {" "}
         <WaiyakiHero />
       </main>
-
-      {/* <figure className="relative h-screen w-full">
-        <Image
-          src="/waiyaki-dev-portfolio-hero-section.jpg"
-          alt="waiyaki"
-          fill
-          className="aspect-square object-fill"
-        />
-      </figure> */}
     </>
   );
 }
