@@ -25,7 +25,7 @@ export function WaiyakiHero() {
           I&apos;m WaiyakiDev
         </div>
 
-        <figure className="!relative w-[25rem] h-[28rem] aspect-square">
+        <figure className="!relative h-[18rem] aspect-square">
           <Image
             src="/AvatarAndIcons.svg"
             alt="waiyaki"
@@ -33,7 +33,7 @@ export function WaiyakiHero() {
             fill
           />
         </figure>
-        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
+        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2 ">
           Scroll down
         </button>
       </motion.div>

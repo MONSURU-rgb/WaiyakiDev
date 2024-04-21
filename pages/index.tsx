@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { WaiyakiHero, WaiyakiHeroText } from "@/components/ui";
+import { motion } from "framer-motion";
+import { Facebook } from "iconsax-react";
+import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,15 +27,33 @@ export default function Home() {
           </ul>
         </nav>
 
-        <div className="px-[clamp(2rem,5vw,6.9rem)] grid gap-3">
-          <h1 className="text-white font-bold text-5xl pt-[18vh]">
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="px-[clamp(2rem,5vw,6.9rem)] grid gap-3"
+        >
+          <h1 className="text-white font-bold text-3xl pt-[18vh] md:text-4xl lg:text-5xl">
             WaiyakiDev
           </h1>
-          <h3 className="text-white text-2xl">
+          <h3 className="text-white md:text-2xl text-xl">
             Frontend Developer + Technical SEO Writer
           </h3>
-          <figure></figure>
-        </div>
+          <figure className="flex gap-4">
+            <Link href="/" className="cursor-pointer">
+              <Facebook size="32" color="#FFFFFF" />
+            </Link>
+            <Link href="/" className="cursor-pointer">
+              <FaLinkedin size="32" color="#FFFFFF" />
+            </Link>
+            <Link href="/" className="cursor-pointer">
+              <RiTwitterXLine size="32" color="#FFFFFF" />
+            </Link>
+          </figure>
+        </motion.div>
       </header>
 
       <main className="">

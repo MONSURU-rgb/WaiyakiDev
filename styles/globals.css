@@ -15,3 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.btn-gradient {
+  text-shadow: 0 0 9px rgb(0 0 0 / 62%);
+  font-weight: 400;
+  background-color: rgba(15, 15, 15, 1);
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
