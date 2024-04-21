@@ -41,9 +41,9 @@ export default function Home() {
                 once
                 text="WaiyakiDev"
                 el="h1"
-                className="text-white font-bold text-3xl md:text-7xl"
+                className="text-white font-bold text-[40px] md:text-7xl"
               />
-              <div className="w-[10rem] h-[10rem] relative">
+              <div className="w-fit h-[10rem] relative">
                 {/* Gradients */}
 
                 {/* Core component */}
@@ -107,6 +107,7 @@ export default function Home() {
       <main className="">
         {" "}
         <WaiyakiHero />
+        <h2 className="h-[30rem]">PROJECTS</h2>
       </main>
     </>
   );

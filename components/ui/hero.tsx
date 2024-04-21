@@ -20,25 +20,25 @@ export function WaiyakiHero() {
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
         <Doings />
-        {/* <motion.div className="text-3xl md:text4xl font-bold dark:text-white text-center">
-          Nice meeting You! 👍
-        </motion.div>
-        <div className="text-2xl md:text-3xl font-bold dark:text-white text-center max-w-[80vw]">
-          I&apos;m WaiyakiDev, a Frontend Developer with passion for learning
-          about React and it ecosystems.
-        </div> */}
+        <section className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
+            <figure className="!relative h-[18rem] aspect-square">
+              <Image
+                src="/AvatarAndIcons.svg"
+                alt="waiyaki"
+                className="aspect-square"
+                fill
+              />
+            </figure>
+            <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2 hover:opacity-80 self-center">
+              Scroll down to my projects
+            </button>
+          </div>
 
-        <figure className="!relative h-[18rem] aspect-square">
-          <Image
-            src="/AvatarAndIcons.svg"
-            alt="waiyaki"
-            className="aspect-square"
-            fill
-          />
-        </figure>
-        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2 hover:opacity-80">
-          Scroll down
-        </button>
+          <section>
+            <h2 className="text-3xl md:text-5xl font-bold">PROJECTS</h2>
+          </section>
+        </section>
       </motion.div>
     </AuroraBackground>
   );
