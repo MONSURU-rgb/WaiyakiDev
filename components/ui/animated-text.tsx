@@ -22,7 +22,7 @@ const defaultAnimations = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.1,
+      duration: 0.01,
     },
   },
 };
@@ -38,7 +38,7 @@ export const AnimatedText = ({
   const controls = useAnimation();
   const textArray = Array.isArray(text) ? text : [text];
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5, once });
+  const isInView = useInView(ref, { amount: 0.1, once });
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
