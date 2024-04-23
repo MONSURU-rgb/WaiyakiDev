@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import {
-  AboutMe,
   AnimatedText,
+  Skills,
   WaiyakiHero,
   WaiyakiHeroText,
 } from "@/components/ui";
@@ -13,6 +13,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { Button } from "@/components/ui/moving-box";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { Projects } from "@/components/ui/projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -107,6 +108,8 @@ export default function Home() {
       <main className="">
         {" "}
         <WaiyakiHero />
+        <Skills />
+        <Projects />
       </main>
     </>
   );
