@@ -105,8 +105,7 @@ export default function Home() {
         </motion.div>
       </header>
 
-      <main className="">
-        {" "}
+      <main>
         <WaiyakiHero />
         <Skills />
         <Projects />
