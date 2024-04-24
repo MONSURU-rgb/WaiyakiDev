@@ -14,7 +14,12 @@ export function Skills() {
     >
       <section className="flex flex-col gap-3 mx-auto max-w-[80vw] justify-center items-center py-[clamp(0.8rem,3vw,3rem)]">
         <h2 className="text-5xl font-bold">MY SKILLSET</h2>
-        <div className="text-xl text-center">
+        <p className="text-xl">
+          As a front-end developer aimed at delivering highly-performing web
+          applications, Here are the list of tools I use to build and maintain
+          websites.
+        </p>
+        <div className="text-xl text-center grid gap-3">
           <div>
             <h4 className="text-3xl font-bold mb-2">Front-end Technologies</h4>
             <p>
