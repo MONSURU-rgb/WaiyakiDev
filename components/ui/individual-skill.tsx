@@ -21,15 +21,15 @@ export function IndividualSkill({
 }: ProjectProps) {
   return (
     <motion.div
-      initial={{ opacity: 0.0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0.0, y: 40, x: -30 }}
+      whileInView={{ opacity: 1, y: 0, x: 0 }}
       transition={{
         delay: 0.5,
         duration: 0.3,
         ease: "easeInOut",
       }}
     >
-      <figure className="!relative h-[clamp(8rem,10vw,14rem)] w-full aspect-[3/1.5]">
+      <figure className="!relative h-[clamp(10rem,10vw,14rem)] w-full aspect-square">
         <Image src={src} alt={alt} className="object-cover" fill></Image>
       </figure>
       <div className="flex flex-col gap-2 bg-[#000c247d] pt-2 px-3">

@@ -20,7 +20,7 @@ export function Projects() {
         <span>Hackathon</span>, and <span>Case Studies</span>.
       </p>
 
-      <article className="flex md:flex-row gap-4 flex-col pb-[clamp(1.5rem,4vw,4rem)] flex-wrap">
+      <article className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 flex-col pb-[clamp(1.5rem,4vw,4rem)] flex-wrap">
         <IndividualSkill
           title="#01 ATTORNEYSTER"
           src="/attorneystar-image.jpg"
