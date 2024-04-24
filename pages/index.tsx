@@ -8,6 +8,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { Button } from "@/components/ui/moving-box";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { Projects } from "@/components/ui/projects";
+import { Conclusion } from "@/components/ui/conclusion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -107,6 +108,7 @@ export default function Home() {
         <WaiyakiHero />
         <Skills />
         <Projects />
+        <Conclusion />
       </main>
     </div>
   );
