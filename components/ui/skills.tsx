@@ -11,6 +11,7 @@ export function Skills() {
         ease: "easeInOut",
       }}
       className="relative flex flex-col gap-4 items-center justify-center"
+      id="waiyakidev-skills"
     >
       <section className="flex flex-col gap-3 mx-auto max-w-[80vw] justify-center items-center py-[clamp(0.8rem,3vw,3rem)]">
         <h2 className="text-5xl font-bold">MY SKILLSET</h2>
@@ -25,7 +26,7 @@ export function Skills() {
             <p>
               I have expertise in HTML5, CSS3 (including Flexbox and Grid), and
               modern JavaScript (ES6+). I&apos;m proficient in frameworks like
-              React.js and have experience with Vue.js or Angular (optional,
+              React.js and will like to work with Vue.js or Angular (optional,
               depending on project requirements).
             </p>
           </div>
@@ -37,7 +38,7 @@ export function Skills() {
               I&apos;m familiar with responsive web design principles, UI/UX
               design concepts, and implementing accessibility standards (WCAG).
               I use version control systems like Git, front-end build tools
-              (e.g., Webpack, Gulp), and browser DevTools for efficient
+              (e.g., Webpack, Babel), and browser DevTools for efficient
               development and debugging.
             </p>
           </div>

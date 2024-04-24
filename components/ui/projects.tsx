@@ -1,12 +1,15 @@
-import { Link } from "iconsax-react";
+import Link from "next/link";
 import React from "react";
-import { Button } from "./moving-box";
+import { Button } from "@/components/ui/moving-box";
 import Image from "next/image";
-import { BackgroundGradient } from "./bg-gradient";
+import { IndividualSkill } from "./individual-skill";
 
 export function Projects() {
   return (
-    <section className="flex flex-col justify-center items-center gap-4 max-w-[80vw] mx-auto">
+    <section
+      className="flex flex-col justify-center items-center gap-4 max-w-[80vw] mx-auto"
+      id="waiyakidev-projects"
+    >
       <h2 className="text-3xl md:text-5xl font-bold w-fit pb-1 border-b border-[#000C24]">
         PROJECTS
       </h2>
@@ -17,91 +20,35 @@ export function Projects() {
         <span>Hackathon</span>, and <span>Case Studies</span>.
       </p>
 
-      <article className="flex md:flex-row gap-4 flex-col">
-        <BackgroundGradient className="rounded-[22px]">
-          <div className="clip !rounded-[22px]">
-            <figure className="!relative w-full aspect-[3/1.5]">
-              <Image
-                src="/attorneystar-image.jpg"
-                alt="Law firm logo"
-                className="object-cover"
-                fill
-              ></Image>
-            </figure>
-            <div className="flex flex-col gap-2 bg-[#000c247d] pt-2 px-3">
-              <h3 className="pb-1 border-b border-[#000C24]">
-                #02 ATTORNEYSTER
-              </h3>
-              <p>
-                Attorneyster is a law firm website that create a simple choice
-                for complex litigation. It is built using CSS, and HTML thus
-                making it legendary
-              </p>
-              <Link
-                href="https://attorneyster-o9iw.vercel.app/src/index.html"
-                className="self-center pb-3"
-              >
-                <Button>View Live Website</Button>
-              </Link>
-            </div>
-          </div>
-        </BackgroundGradient>
-        <BackgroundGradient className="rounded-[22px]">
-          <div className="clip">
-            <figure className="!relative w-full aspect-[3/1.5]">
-              <Image
-                src="/attorneystar-image.jpg"
-                alt="Law firm logo"
-                className="object-cover"
-                fill
-              ></Image>
-            </figure>
-            <div className="flex flex-col gap-2 bg-[#000c247d] pt-2 px-3">
-              <h3 className="pb-1 border-b border-[#000C24]">
-                #02 ATTORNEYSTER
-              </h3>
-              <p>
-                Attorneyster is a law firm website that create a simple choice
-                for complex litigation. It is built using CSS, and HTML thus
-                making it legendary
-              </p>
-              <Link
-                href="https://attorneyster-o9iw.vercel.app/src/index.html"
-                className="self-center pb-3"
-              >
-                <Button>View Live Website</Button>
-              </Link>
-            </div>
-          </div>
-        </BackgroundGradient>
-        <BackgroundGradient className="rounded-[22px]">
-          <div className="clip">
-            <figure className="!relative w-full aspect-[3/1.5]">
-              <Image
-                src="/attorneystar-image.jpg"
-                alt="Law firm logo"
-                className="object-cover"
-                fill
-              ></Image>
-            </figure>
-            <div className="flex flex-col gap-2 bg-[#000c247d] pt-2 px-3">
-              <h3 className="pb-1 border-b border-[#000C24]">
-                #02 ATTORNEYSTER
-              </h3>
-              <p>
-                Attorneyster is a law firm website that create a simple choice
-                for complex litigation. It is built using CSS, and HTML thus
-                making it legendary
-              </p>
-              <Link
-                href="https://attorneyster-o9iw.vercel.app/src/index.html"
-                className="self-center pb-3"
-              >
-                <Button>View Live Website</Button>
-              </Link>
-            </div>
-          </div>
-        </BackgroundGradient>
+      <article className="flex md:flex-row gap-4 flex-col pb-[clamp(1.5rem,4vw,4rem)] flex-wrap">
+        <IndividualSkill
+          title="#01 ATTORNEYSTER"
+          src="/attorneystar-image.jpg"
+          alt="attorneyster law firm website"
+          link="https://attorneyster-o9iw.vercel.app/src/index.html"
+          description="Attorneyster is a law firm website that create a simple choice for complex litigation. It is built using CSS, and HTML thus making it legendary"
+        />
+        <IndividualSkill
+          title="#02 COMMODITY-GRADING-SYSTEM"
+          src="/cgs.png"
+          alt="commodity grading system"
+          link="https://commodity-grading-sysytem.vercel.app/"
+          description="Attorneyster is a law firm website that create a simple choice for complex litigation. It is built using CSS, and HTML thus making it legendary"
+        />
+        <IndividualSkill
+          title="#03 Open Source"
+          src="/tublian-open-source.png"
+          alt="tublian open source project"
+          link="https://tublian-integration.vercel.app/"
+          description="The idea behind this project is to create a simple and user friendly app that exemplifies the steps involved in online payment platforms. This app consist of four basic sections."
+        />
+        <IndividualSkill
+          title="#04 MEDI-SYNC-CARE"
+          src="/medisyncare.png"
+          alt="medisyncare website"
+          link="https://medi-sync-care.vercel.app/"
+          description="This app is a medical adherence platform that provides revolutionary medication adherence solutions for chronic illness. It facilitate effective management of medication regimen between the health provider and the patient."
+        />
       </article>
     </section>
   );

@@ -1,11 +1,5 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import {
-  AnimatedText,
-  Skills,
-  WaiyakiHero,
-  WaiyakiHeroText,
-} from "@/components/ui";
+import { AnimatedText, Skills, WaiyakiHero } from "@/components/ui";
 import { motion } from "framer-motion";
 import { Facebook } from "iconsax-react";
 import Link from "next/link";
@@ -19,18 +13,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
-      <header className="">
+    <div className="pb-[clamp(2rem,4vw,4rem)]">
+      <header>
         <nav className="py-12 !sticky top-0 z-50 bg-[#000C24]">
           <ul className="flex gap-[clamp(8px,3vw,48px)] mx-auto text-white px-[clamp(2rem,7vw,8.1rem)] justify-end">
             <li className="hover:opacity-80 cursor-pointer text-[#F44336]">
               Home
             </li>
-            <li className="hover:opacity-80 cursor-pointer">About</li>
-            <li className="hover:opacity-80 cursor-pointer">Skills</li>
-            <li className="hover:opacity-80 cursor-pointer">Works</li>
-            <li className="hover:opacity-80 cursor-pointer text-poppins">
-              Contact
+            <li className="hover:opacity-80 cursor-pointer">
+              <Link href="#about-me">About</Link>
+            </li>
+            <li className="hover:opacity-80 cursor-pointer">
+              <Link href="#waiyakidev-skills">Skills</Link>
+            </li>
+            <li className="hover:opacity-80 cursor-pointer">
+              <Link href="#waiyakidev-projects">Works</Link>
             </li>
           </ul>
         </nav>
@@ -62,32 +59,33 @@ export default function Home() {
               </div>
             </div>
           </section>
-
-          <AnimatedText
-            once
-            text="Frontend Developer + Technical SEO Writer"
-            el="h2"
-            className="text-white md:text-2xl text-xl"
-          />
-          <AnimatedText
-            once
-            text="I Read, I Code and I Write ✍️"
-            el="h3"
-            className="text-white md:text-2xl text-xl"
-          />
-
-          <section className="flex flex-col items-start justify-start text-white !max-w-[70vw] overflow-hidden gap-2">
+          <section className="pr-[clamp(2rem,5vw,6.9rem)]">
             <AnimatedText
-              el="h3"
-              text={[
-                "Passionate Front-End Developer with flare for React, its Ecosystem, AI and Other Web Technologies. ",
-                "Dedicated to crafting elegant, mobile-responsive and user-friendly web applications.",
-                "Check my previous projects and portfolio",
-              ]}
-              className="text-xl"
-              repeatDelay={1000}
+              once
+              text="Frontend Developer + Technical SEO Writer"
+              el="h2"
+              className="text-white md:text-2xl text-xl"
             />
+            <AnimatedText
+              once
+              text="I Read, I Code and I Write ✍️"
+              el="h3"
+              className="text-white md:text-2xl text-xl"
+            />
+
+            <article className="flex flex-col items-start justify-start text-white !max-w-[70vw] overflow-hidden gap-2">
+              <AnimatedText
+                el="h3"
+                text={[
+                  "Passionate Front-End Developer with flare for React, its Ecosystem, AI and Other Web Technologies. ",
+                  "Dedicated to crafting elegant, mobile-responsive and user-friendly web applications.",
+                ]}
+                className="text-xl"
+                repeatDelay={200}
+              />
+            </article>
           </section>
+
           <Link href="mailto:seowriteru3@gmail.com">
             <Button>Let&apos;s Collaborate</Button>
           </Link>
@@ -110,6 +108,6 @@ export default function Home() {
         <Skills />
         <Projects />
       </main>
-    </>
+    </div>
   );
 }
