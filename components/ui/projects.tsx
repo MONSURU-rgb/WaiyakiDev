@@ -33,7 +33,7 @@ export function Projects() {
           src="/cgs.png"
           alt="commodity grading system"
           link="https://commodity-grading-sysytem.vercel.app/"
-          description="This is a commodity grading system web app that provides a simple and efficient way to manage inventory."
+          description="This is the desktop version of a commodity grading system web application that provides a simple and efficient way to manage inventory."
         />
         <IndividualSkill
           title="#03 Open Source"
