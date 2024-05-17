@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [My Portfolio Website](https://waiyaki-dev.vercel.app) built with Next.js.
 
-## Getting Started
+## Get Started
 
-First, run the development server:
+This portfolio website has the following main sections:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Home
+- About
+- Skills
+- Works
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Home Section
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+This section highlights the brand name, along with my major skills, and area of interest. It also includes a Call to Action button to collaborate on more projects, as well as some social handles.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## About Section
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This section contained an avatar with a list of my major tech stacks (React, Typescript, Figma, TailwindCSS, Framer, Recharts.js). 
 
-## Learn More
+## Skills Section
 
-To learn more about Next.js, take a look at the following resources:
+This section highlights my tech arsenals based on the following project requirements:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Front-end technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ES6+ (Modern JavaScript)
+- React.js
+- Next.js
+- CSS3
+- TailwindCSS
+- Recharts (Other chart libraries)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Design and Development Tools
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Git
+- Webpack
+- DevTools
+
+
+### Testing and Integration 
+
+- RESTful APIs
+- Jest
+
+## Skills Section
+
+This section contains a list of my previous projects that span various areas of software development including internship, Open-Source, Hackathon, and Case Studies.
+
+
+
+
